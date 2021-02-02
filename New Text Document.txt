@@ -1,0 +1,18 @@
+#using random to select the characters at random 
+import random
+
+small="abcdefghijklmnopqurstuvwxyz"
+caps="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+symb="!@#$%^&*()_+{}':<>?~"
+Num="1234567890"
+
+#concatenating all the characters
+char=small+caps+symb+Num 
+
+#specifying the length of the password to be generated
+length=16
+
+
+password=''.join(random.sample(char,length))
+
+print(password)
